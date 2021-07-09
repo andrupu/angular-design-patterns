@@ -36,9 +36,10 @@ import { SpinnerOverlaysModule } from './pages/loading-waiting-states/spinner-ov
 import { ContextualSpinnersModule } from './pages/loading-waiting-states/contextual-spinners/contextual-spinners.module';
 import { ProgressBarsModule } from './pages/loading-waiting-states/progress-bars/progress-bars.module';
 import { SkeletonLoaderModule } from './pages/loading-waiting-states/skeleton-loader/skeleton-loader.module';
+import { UserMenuBottomSheetComponent } from './pages/overlays/user-menu-bottom-sheet/user-menu-bottom-sheet.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, UserMenuBottomSheetComponent],
     imports: [
         ActionListModule,
         DataListModule,
