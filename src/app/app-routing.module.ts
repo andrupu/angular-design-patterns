@@ -5,6 +5,7 @@ import { ActionListComponent } from './pages/list/action-list/action-list.compon
 import { StatusListComponent } from './pages/list/status-list/status-list.component';
 import { MultiselectListComponent } from './pages/list/multiselect-list/multiselect-list.component';
 import { BasicBottomSheetComponent } from './pages/overlays/basic-bottom-sheet/basic-bottom-sheet.component';
+import { UserMenuBottomSheetComponent } from './pages/overlays/user-menu-bottom-sheet/user-menu-bottom-sheet.component';
 import { CollapsibleAppBarComponent } from './pages/app-bar/collapsible-app-bar/collapsible-app-bar.component';
 import { ComplexBottomSheetComponent } from './pages/overlays/complex-bottom-sheet/complex-bottom-sheet.component';
 import { SortableListComponent } from './pages/list/sortable-list/sortable-list.component';
@@ -135,6 +136,11 @@ export const ROUTES: DrawerItem[] = [
                 title: 'Complex Bottom Sheet',
                 path: 'complex-bottom-sheet',
                 component: ComplexBottomSheetComponent,
+            },
+            {
+                title: 'User Menu Bottom Sheet',
+                path: 'user-menu-bottom-sheet',
+                component: UserMenuBottomSheetComponent,
             },
         ],
     },
