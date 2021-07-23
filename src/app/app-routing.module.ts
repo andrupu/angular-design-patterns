@@ -44,7 +44,7 @@ export const ROUTES: DrawerItem[] = [
             //     path: 'drawer-account-menu',
             //     component: DrawerAccountMenuComponent,
             // },
-        ]
+        ],
     },
     {
         title: 'App Bar',

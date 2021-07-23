@@ -38,7 +38,6 @@ import { ProgressBarsModule } from './pages/loading-waiting-states/progress-bars
 import { SkeletonLoaderModule } from './pages/loading-waiting-states/skeleton-loader/skeleton-loader.module';
 import { AppBarAccountMenuComponent } from './pages/account-menu/app-bar-account-menu/app-bar-account-menu.component';
 
-
 @NgModule({
     declarations: [AppComponent, AppBarAccountMenuComponent],
     imports: [
