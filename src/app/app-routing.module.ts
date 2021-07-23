@@ -7,6 +7,7 @@ import { MultiselectListComponent } from './pages/list/multiselect-list/multisel
 import { BasicBottomSheetComponent } from './pages/overlays/basic-bottom-sheet/basic-bottom-sheet.component';
 import { CollapsibleAppBarComponent } from './pages/app-bar/collapsible-app-bar/collapsible-app-bar.component';
 import { ComplexBottomSheetComponent } from './pages/overlays/complex-bottom-sheet/complex-bottom-sheet.component';
+import { AppBarAccountMenuComponent } from './pages/account-menu/app-bar-account-menu/app-bar-account-menu.component';
 import { SortableListComponent } from './pages/list/sortable-list/sortable-list.component';
 import { SearchBarComponent } from './pages/app-bar/search-bar/search-bar.component';
 import { ResponsiveTableComponent } from './pages/list/responsive-table/responsive-table.component';
@@ -33,11 +34,11 @@ export const ROUTES: DrawerItem[] = [
         title: 'Account Menu',
         path: 'account-menu',
         children: [
-            // {
-            //     title: 'In an App Bar',
-            //     path: 'app-bar-account-menu',
-            //     component: AppBarAccountMenuComponent,
-            // },
+            {
+                title: 'In an App Bar',
+                path: 'app-bar-account-menu',
+                component: AppBarAccountMenuComponent,
+            },
             // {
             //     title: 'In a Drawer',
             //     path: 'drawer-account-menu',
