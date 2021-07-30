@@ -4,3 +4,23 @@
     </button>
     <div class="mat-title" [style.marginLeft.px]="isSmall ? 24 : 0">In an App Bar</div>
 </mat-toolbar>
+
+<div class="exmaple-container" style="margin:16px;">
+    <mat-toolbar color="primary" style="margin: 16px;">
+        <mat-toolbar-row style="justify-content: space-between">
+            <button mat-icon-button>
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+            <div class="mat-display-1">Generic Icon Avatar</div>
+            <div class="mat-headline">Shared / Anonymous Account</div>
+        </mat-toolbar-row>
+        <mat-toolbar-row style="justify-content: space-between">
+            <button mat-icon-button>
+                <!-- Add (click) here to toggle user menu -->
+                <mat-icon>account_circle</mat-icon>
+            </button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>
