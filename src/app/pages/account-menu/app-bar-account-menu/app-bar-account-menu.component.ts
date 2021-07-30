@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { StateService } from '../../../services/state.service';
 
-
 @Component({
     selector: 'app-app-bar-account-menu',
     templateUrl: './app-bar-account-menu.component.html',
@@ -13,10 +12,8 @@ export class AppBarAccountMenuComponent implements OnInit {
 
     constructor(
         private readonly _drawerService: StateService,
-        private readonly _breakpointObserver: BreakpointObserver,
-        ) {
-
-        }
+        private readonly _breakpointObserver: BreakpointObserver
+    ) {}
 
     ngOnInit(): void {
         this._breakpointObserver
