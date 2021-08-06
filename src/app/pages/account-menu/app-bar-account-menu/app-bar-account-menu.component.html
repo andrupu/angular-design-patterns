@@ -65,4 +65,39 @@
               </mat-menu>
         </mat-toolbar-row>
     </mat-toolbar>
+
+    <!-- Image Avatar User Menu -->
+    <mat-toolbar color="primary" style="margin: 16px;">
+        <mat-toolbar-row style="justify-content: space-between">
+            <button mat-icon-button>
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+            <div class="mat-display-1">Image Avatar</div>
+            <div class="mat-headline">Showing A Custom Profile Picture</div>
+        </mat-toolbar-row>
+        <mat-toolbar-row style="justify-content: space-between">
+            <button mat-icon-button [matMenuTriggerFor]="userMenu">
+                <!-- Add (click) here to toggle user menu -->
+                <mat-icon>account_circle</mat-icon>
+            </button>
+            <mat-menu #userMenu="matMenu">
+                <div class="user-menu-header">
+                    <div class="user-icon">
+                        <button mat-menu-item>
+                            <mat-icon>account_circle</mat-icon>
+                        </button>
+                    </div>
+                    <div class="user-info">
+                        <span pxb-title>Chima Thabani</span>
+                        <span pxb-subtitle>CThabani@example.com</span>
+                    </div>
+                </div>
+                <button mat-menu-item><mat-icon>vpn_key</mat-icon>Change Password</button>
+                <button mat-menu-item><mat-icon>settings</mat-icon>Preferences</button>
+                <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Log Out</button>
+              </mat-menu>
+        </mat-toolbar-row>
+    </mat-toolbar>
 </div>
