@@ -5,9 +5,10 @@
     <div class="mat-title" [style.marginLeft.px]="isSmall ? 24 : 0">In an App Bar</div>
 </mat-toolbar>
 
+<!-- TODO: Make each example toolbar have only 1 mat-toolbar-row -->
 <div class="exmaple-container" style="margin:16px;">
     <!-- Generic Icon Avatar - Guest User Menu -->
-    <mat-toolbar color="primary" style="margin: 16px;">
+    <mat-toolbar color="primary" style="margin: 16px; max-width: 960px;">
         <mat-toolbar-row style="justify-content: space-between">
             <button mat-icon-button>
                 <mat-icon>menu</mat-icon>
@@ -19,7 +20,6 @@
         </mat-toolbar-row>
         <mat-toolbar-row style="justify-content: space-between">
             <button mat-icon-button [matMenuTriggerFor]="guestMenu">
-                <!-- Add (click) here to toggle user menu -->
                 <mat-icon>account_circle</mat-icon>
             </button>
             <mat-menu #guestMenu="matMenu">
@@ -32,7 +32,7 @@
     </mat-toolbar>
 
     <!-- Basic Letter Avatar User Menu -->
-    <mat-toolbar color="primary" style="margin: 16px;">
+    <mat-toolbar color="primary" style="margin: 16px; max-width: 960px;">
         <mat-toolbar-row style="justify-content: space-between">
             <button mat-icon-button>
                 <mat-icon>menu</mat-icon>
@@ -44,7 +44,6 @@
         </mat-toolbar-row>
         <mat-toolbar-row style="justify-content: space-between">
             <button mat-icon-button [matMenuTriggerFor]="userMenu">
-                <!-- Add (click) here to toggle user menu -->
                 <mat-icon>account_circle</mat-icon>
             </button>
             <mat-menu #userMenu="matMenu">
@@ -67,7 +66,7 @@
     </mat-toolbar>
 
     <!-- Image Avatar User Menu -->
-    <mat-toolbar color="primary" style="margin: 16px;">
+    <mat-toolbar color="primary" style="margin: 16px; max-width: 960px;">
         <mat-toolbar-row style="justify-content: space-between">
             <button mat-icon-button>
                 <mat-icon>menu</mat-icon>
@@ -79,7 +78,6 @@
         </mat-toolbar-row>
         <mat-toolbar-row style="justify-content: space-between">
             <button mat-icon-button [matMenuTriggerFor]="userMenu">
-                <!-- Add (click) here to toggle user menu -->
                 <mat-icon>account_circle</mat-icon>
             </button>
             <mat-menu #userMenu="matMenu">
@@ -102,7 +100,7 @@
     </mat-toolbar>
 
     <!-- Status Avatar User Menu -->
-    <mat-toolbar color="primary" style="margin: 16px;">
+    <mat-toolbar color="primary" style="margin: 16px; max-width: 960px;">
         <mat-toolbar-row style="justify-content: space-between">
             <button mat-icon-button>
                 <mat-icon>menu</mat-icon>
@@ -114,7 +112,6 @@
         </mat-toolbar-row>
         <mat-toolbar-row style="justify-content: space-between">
             <button mat-icon-button [matMenuTriggerFor]="userMenu">
-                <!-- Add (click) here to toggle user menu -->
                 <mat-icon>account_circle</mat-icon>
             </button>
             <mat-menu #userMenu="matMenu">
@@ -129,6 +126,34 @@
                         <span pxb-subtitle>CThabani@example.com</span>
                     </div>
                 </div>
+                <button mat-menu-item><mat-icon>vpn_key</mat-icon>Change Password</button>
+                <button mat-menu-item><mat-icon>settings</mat-icon>Preferences</button>
+                <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Log Out</button>
+              </mat-menu>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <!-- Text Menu User Account Menu -->
+    <mat-toolbar color="primary" style="margin: 16px; max-width: 960px;">
+        <mat-toolbar-row style="justify-content: space-between">
+            <button mat-icon-button>
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+            <div class="mat-display-1">Text Menu</div>
+            <div class="mat-headline">Calling Out the User Name</div>
+        </mat-toolbar-row>
+        <mat-toolbar-row style="justify-content: space-between">
+            <button mat-icon-button [matMenuTriggerFor]="userChipMenu">
+                <!-- Add (click) here to toggle user menu Activation-->
+                <mat-chip>
+                    <mat-icon>account_circle</mat-icon>
+                    <div>Admin</div>
+                    <mat-icon>expand_more</mat-icon>
+                </mat-chip>
+            </button>
+            <mat-menu #userChipMenu="matMenu">
                 <button mat-menu-item><mat-icon>vpn_key</mat-icon>Change Password</button>
                 <button mat-menu-item><mat-icon>settings</mat-icon>Preferences</button>
                 <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Log Out</button>

@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatChipsModule } from '@angular/material/chips';
 import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -60,6 +61,7 @@ import { AppBarAccountMenuComponent } from './pages/account-menu/app-bar-account
         MatDividerModule,
         MatMenuModule,
         MatSidenavModule,
+        MatChipsModule,
         MatListModule,
         FormsModule,
         ReactiveFormsModule,
