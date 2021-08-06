@@ -17,10 +17,16 @@
             <div class="mat-headline">Shared / Anonymous Account</div>
         </mat-toolbar-row>
         <mat-toolbar-row style="justify-content: space-between">
-            <button mat-icon-button>
+            <button mat-icon-button [matMenuTriggerFor]="menu">
                 <!-- Add (click) here to toggle user menu -->
                 <mat-icon>account_circle</mat-icon>
             </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Browsing as a guest</button>
+                <button mat-menu-item><mat-icon>input</mat-icon>Log In</button>
+                <button mat-menu-item><mat-icon>create</mat-icon>Register</button>
+                <button mat-menu-item><mat-icon>info</mat-icon>About</button>
+              </mat-menu>
         </mat-toolbar-row>
     </mat-toolbar>
 </div>
