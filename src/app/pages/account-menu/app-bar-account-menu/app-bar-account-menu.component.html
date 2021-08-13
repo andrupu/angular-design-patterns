@@ -21,6 +21,7 @@
             <button mat-icon-button [matMenuTriggerFor]="guestMenu">
                 <mat-icon>account_circle</mat-icon>
             </button>
+            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <mat-menu #guestMenu="matMenu">
                 <button mat-menu-item>Browsing as a guest</button>
                 <button mat-menu-item><mat-icon>login</mat-icon>Log In</button>
@@ -45,6 +46,7 @@
             <button mat-icon-button [matMenuTriggerFor]="userMenu">
                 <mat-icon>account_circle</mat-icon>
             </button>
+            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <mat-menu #userMenu="matMenu">
                 <div class="user-menu-header">
                     <div class="user-icon">
@@ -52,10 +54,10 @@
                             <mat-icon>account_circle</mat-icon>
                         </button>
                     </div>
-                    <div class="user-info">
-                        <span pxb-title>Chima Thabani</span>
-                        <span pxb-subtitle>CThabani@example.com</span>
-                    </div>
+                    <span class="user-info">
+                        <div pxb-title>Chima Thabani</div>
+                        <div pxb-subtitle>CThabani@example.com</div>
+                    </span>
                 </div>
                 <button mat-menu-item><mat-icon>vpn_key</mat-icon>Change Password</button>
                 <button mat-menu-item><mat-icon>settings</mat-icon>Preferences</button>
@@ -79,6 +81,7 @@
             <button mat-icon-button [matMenuTriggerFor]="userMenu">
                 <mat-icon>account_circle</mat-icon>
             </button>
+            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <mat-menu #userMenu="matMenu">
                 <div class="user-menu-header">
                     <div class="user-icon">
@@ -86,10 +89,10 @@
                             <mat-icon>account_circle</mat-icon>
                         </button>
                     </div>
-                    <div class="user-info">
-                        <span pxb-title>Chima Thabani</span>
-                        <span pxb-subtitle>CThabani@example.com</span>
-                    </div>
+                    <span class="user-info">
+                        <div pxb-title>Chima Thabani</div>
+                        <div pxb-subtitle>CThabani@example.com</div>
+                    </span>
                 </div>
                 <button mat-menu-item><mat-icon>vpn_key</mat-icon>Change Password</button>
                 <button mat-menu-item><mat-icon>settings</mat-icon>Preferences</button>
@@ -113,6 +116,7 @@
             <button mat-icon-button [matMenuTriggerFor]="userMenu">
                 <mat-icon>account_circle</mat-icon>
             </button>
+            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <mat-menu #userMenu="matMenu">
                 <div class="user-menu-header">
                     <div class="user-icon">
@@ -120,10 +124,10 @@
                             <mat-icon>account_circle</mat-icon>
                         </button>
                     </div>
-                    <div class="user-info">
-                        <span pxb-title>Chima Thabani</span>
-                        <span pxb-subtitle>CThabani@example.com</span>
-                    </div>
+                    <span class="user-info">
+                        <div pxb-title>Chima Thabani</div>
+                        <div pxb-subtitle>CThabani@example.com</div>
+                    </span>
                 </div>
                 <button mat-menu-item><mat-icon>vpn_key</mat-icon>Change Password</button>
                 <button mat-menu-item><mat-icon>settings</mat-icon>Preferences</button>
@@ -144,6 +148,7 @@
             <div class="mat-headline">Calling Out the User Name</div>
         </span>
         <span style="justify-content: space-between">
+            <!-- Use PXBlue storyBook user menu component, ng chip will need extra work -->
             <button mat-icon-button [matMenuTriggerFor]="userChipMenu">
                 <!-- Add (click) here to toggle user menu Activation-->
                 <mat-chip>
