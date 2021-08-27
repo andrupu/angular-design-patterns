@@ -1,3 +1,10 @@
+/**
+ Copyright (c) 2021-present, Eaton
+
+ All rights reserved.
+
+ This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
+ **/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -10,14 +17,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatChipsModule } from '@angular/material/chips';
 import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DrawerLayoutModule, DrawerModule, EmptyStateModule } from '@pxblue/angular-components';
-import { UserMenuModule, InfoListItemModule } from '@pxblue/angular-components';
 import { DataListModule } from './pages/list/data-list/data-list.module';
 import { ActionListModule } from './pages/list/action-list/action-list.module';
 import { StatusListModule } from './pages/list/status-list/status-list.module';
@@ -38,10 +43,15 @@ import { SpinnerOverlaysModule } from './pages/loading-waiting-states/spinner-ov
 import { ContextualSpinnersModule } from './pages/loading-waiting-states/contextual-spinners/contextual-spinners.module';
 import { ProgressBarsModule } from './pages/loading-waiting-states/progress-bars/progress-bars.module';
 import { SkeletonLoaderModule } from './pages/loading-waiting-states/skeleton-loader/skeleton-loader.module';
-import { AppBarAccountMenuComponent } from './pages/account-menu/app-bar-account-menu/app-bar-account-menu.component';
+import { PasswordModule } from './pages/forms-and-validation/password/password.module';
+import { PhoneNumberFormatModule } from './pages/forms-and-validation/phone-number-format/phone-number-format.module';
+import { VerifyOnSubmitModule } from './pages/forms-and-validation/verify-on-submit/verify-on-submit.module';
+import { FixLengthPasscodeModule } from './pages/forms-and-validation/fix-length-passcode/fix-length-passcode.module';
+import { SectionedFormModule } from './pages/forms-and-validation/sectioned-form/sectioned-form.module';
+import { InAListModule } from './pages/forms-and-validation/in-a-list/in-a-list.module';
 
 @NgModule({
-    declarations: [AppComponent, AppBarAccountMenuComponent],
+    declarations: [AppComponent],
     imports: [
         ActionListModule,
         DataListModule,
@@ -52,8 +62,6 @@ import { AppBarAccountMenuComponent } from './pages/account-menu/app-bar-account
         I18nModule,
         DrawerLayoutModule,
         DrawerModule,
-        UserMenuModule,
-        InfoListItemModule,
         BrowserAnimationsModule,
         BrowserModule,
         AppRoutingModule,
@@ -64,7 +72,6 @@ import { AppBarAccountMenuComponent } from './pages/account-menu/app-bar-account
         MatDividerModule,
         MatMenuModule,
         MatSidenavModule,
-        MatChipsModule,
         MatListModule,
         FormsModule,
         ReactiveFormsModule,
@@ -85,6 +92,12 @@ import { AppBarAccountMenuComponent } from './pages/account-menu/app-bar-account
         ContextualSpinnersModule,
         ProgressBarsModule,
         SkeletonLoaderModule,
+        PasswordModule,
+        PhoneNumberFormatModule,
+        VerifyOnSubmitModule,
+        FixLengthPasscodeModule,
+        SectionedFormModule,
+        InAListModule,
     ],
     bootstrap: [AppComponent],
 })

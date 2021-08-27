@@ -1,23 +1,23 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { StateService } from '../../../services/state.service';
-import * as Colors from '@pxblue/colors';
-@Component({
-    selector: 'app-skeleton-loader',
-    templateUrl: './skeleton-loader.component.html',
-    styleUrls: ['./skeleton-loader.component.scss'],
-})
-export class SkeletonLoaderComponent implements OnInit, OnDestroy {
-    isSmall: boolean;
-    checked = false;
-    colors = Colors;
-    showPlaceHolder = true;
-    interval;
 
+@Component({
+    selector: 'app-in-a-list',
+    templateUrl: './in-a-list.component.html',
+    styleUrls: ['./in-a-list.component.scss'],
+})
+export class InAListComponent implements OnInit {
+    isSmall: boolean;
+    listForm: FormGroup;
     constructor(
         private readonly _drawerService: StateService,
-        private readonly _breakpointObserver: BreakpointObserver
-    ) {}
+        private readonly _breakpointObserver: BreakpointObserver,
+        private readonly _formBuilder: FormBuilder
+    ) {
+        this.initForm();
+    }
 
     ngOnInit(): void {
         this._breakpointObserver
@@ -29,18 +29,12 @@ export class SkeletonLoaderComponent implements OnInit, OnDestroy {
                     this.isSmall = false;
                 }
             });
-
-        this.loadData();
     }
 
-    ngOnDestroy(): void {
-        clearInterval(this.interval);
-    }
-
-    loadData(): void {
-        this.interval = setInterval(() => {
-            this.showPlaceHolder = !this.showPlaceHolder;
-        }, 5000);
+    initForm(): void {
+        this.listForm = this._formBuilder.group({
+            ipAddress: ['10.0.0.1'],
+        });
     }
 
     toggleMenu(): void {
