@@ -17,6 +17,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DrawerLayoutModule, DrawerModule, EmptyStateModule } from '@pxblue/angular-components';
+import { UserMenuModule, InfoListItemModule } from '@pxblue/angular-components';
 import { DataListModule } from './pages/list/data-list/data-list.module';
 import { ActionListModule } from './pages/list/action-list/action-list.module';
 import { StatusListModule } from './pages/list/status-list/status-list.module';
@@ -51,6 +52,8 @@ import { AppBarAccountMenuComponent } from './pages/account-menu/app-bar-account
         I18nModule,
         DrawerLayoutModule,
         DrawerModule,
+        UserMenuModule,
+        InfoListItemModule,
         BrowserAnimationsModule,
         BrowserModule,
         AppRoutingModule,
