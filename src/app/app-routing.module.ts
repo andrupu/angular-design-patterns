@@ -20,12 +20,6 @@ import { ProgressBarsComponent } from './pages/loading-waiting-states/progress-b
 import { SpinnerOverlaysComponent } from './pages/loading-waiting-states/spinner-overlays/spinner-overlays.component';
 import { ContextualSpinnersComponent } from './pages/loading-waiting-states/contextual-spinners/contextual-spinners.component';
 import { SkeletonLoaderComponent } from './pages/loading-waiting-states/skeleton-loader/skeleton-loader.component';
-import { PasswordComponent } from './pages/forms-and-validation/password/password.component';
-import { FixLengthPasscodeComponent } from './pages/forms-and-validation/fix-length-passcode/fix-length-passcode.component';
-import { PhoneNumberFormatComponent } from './pages/forms-and-validation/phone-number-format/phone-number-format.component';
-import { VerifyOnSubmitComponent } from './pages/forms-and-validation/verify-on-submit/verify-on-submit.component';
-import { SectionedFormComponent } from './pages/forms-and-validation/sectioned-form/sectioned-form.component';
-import { InAListComponent } from './pages/forms-and-validation/in-a-list/in-a-list.component';
 
 export type DrawerItem = {
     title: string;
@@ -72,42 +66,6 @@ export const ROUTES: DrawerItem[] = [
         title: 'Form Validation',
         path: 'form-validation',
         component: FormValidationComponent,
-    },
-    {
-        title: 'Forms and Validation',
-        path: 'forms-and-validation',
-        children: [
-            {
-                title: 'Password',
-                path: 'password',
-                component: PasswordComponent,
-            },
-            {
-                title: 'Fixed Length Passcode',
-                path: 'fixed-length-passcode',
-                component: FixLengthPasscodeComponent,
-            },
-            {
-                title: 'Phone Number Format',
-                path: 'phone-number-format',
-                component: PhoneNumberFormatComponent,
-            },
-            {
-                title: 'Verify on Submit',
-                path: 'verify-on-submit',
-                component: VerifyOnSubmitComponent,
-            },
-            {
-                title: 'Sectioned Form',
-                path: 'sectioned-form',
-                component: SectionedFormComponent,
-            },
-            {
-                title: 'In a List',
-                path: 'in-a-list',
-                component: InAListComponent,
-            },
-        ],
     },
     {
         title: 'Internationalization',

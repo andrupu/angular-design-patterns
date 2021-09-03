@@ -1,7 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { StateService } from '../../../services/state.service';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 import * as Colors from '@pxblue/colors';
+
+const iconSet = require('@pxblue/icons-svg/icons.svg').default;
+
 @Component({
     selector: 'app-skeleton-loader',
     templateUrl: './skeleton-loader.component.html',
@@ -16,8 +21,15 @@ export class SkeletonLoaderComponent implements OnInit, OnDestroy {
 
     constructor(
         private readonly _drawerService: StateService,
-        private readonly _breakpointObserver: BreakpointObserver
-    ) {}
+        private readonly _breakpointObserver: BreakpointObserver,
+        private readonly _matIconRegistry: MatIconRegistry,
+        private readonly _domSanitizer: DomSanitizer
+    ) {
+        this._matIconRegistry.addSvgIconSetInNamespace(
+            'px-icons',
+            this._domSanitizer.bypassSecurityTrustResourceUrl(iconSet)
+        );
+    }
 
     ngOnInit(): void {
         this._breakpointObserver
