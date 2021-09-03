@@ -18,10 +18,10 @@
             <div pxb-subtitle>Shared / Anonymous Account</div>
         </span>
         <span style="justify-content: space-between">
+            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <button mat-icon-button [matMenuTriggerFor]="guestMenu">
                 <mat-icon>account_circle</mat-icon>
             </button>
-            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <mat-menu #guestMenu="matMenu">
                 <button mat-menu-item>Browsing as a guest</button>
                 <button mat-menu-item><mat-icon>login</mat-icon>Log In</button>
@@ -51,7 +51,7 @@
             <!-- <pxb-user-menu 
                 [avatarValue]="avatarValue"     or      avatarValue="CT" 
                 [menuTitle]="menuTitle"         or      menuTitle="Chima Thabani"
-                [menuSubtitle]="menuSubtitle"   or      menuSubTitle="CThabani@example.com"
+                [menuSubtitle]="menuSubtitle"   or      menuSubtitle="CThabani@example.com"
                 [(open)]="open">
                 <mat-nav-list pxb-menu-body [style.paddingTop.px]="0">
                     <pxb-info-list-item *ngFor="let item of items" [dense]="true" 
@@ -92,10 +92,10 @@
             <div pxb-subtitle>Showing A Custom Profile Picture</div>
         </span>
         <span style="justify-content: space-between">
+            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <button mat-icon-button [matMenuTriggerFor]="userMenu">
                 <mat-icon>account_circle</mat-icon>
             </button>
-            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <mat-menu #userMenu="matMenu">
                 <div class="user-menu-header">
                     <div class="user-icon">
@@ -127,10 +127,10 @@
             <div pxb-subtitle>Avatar with Status Indicator</div>
         </span>
         <span style="justify-content: space-between">
+            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <button mat-icon-button [matMenuTriggerFor]="userMenu">
                 <mat-icon>account_circle</mat-icon>
             </button>
-            <!-- TODO: use PXBlue userMenu component from StoryBook -->
             <mat-menu #userMenu="matMenu">
                 <div class="user-menu-header">
                     <div class="user-icon">
