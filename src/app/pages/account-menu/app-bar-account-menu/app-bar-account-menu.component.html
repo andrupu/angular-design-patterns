@@ -163,19 +163,20 @@
         </span>
         <span style="justify-content: space-between">
             <!-- Use PXBlue storyBook user menu component, ng chip will need extra work -->
-            <button mat-icon-button [matMenuTriggerFor]="userChipMenu">
-                <!-- Add (click) here to toggle user menu Activation-->
-                <mat-chip>
-                    <mat-icon>account_circle</mat-icon>
-                    <div>Admin</div>
+            <!-- Add (click) here to toggle user menu Activation-->
+            <mat-chip-list [matMenuTriggerFor]="userChipMenu" color="primary">
+                <mat-chip >
+                    <mat-icon matChipAvatar>person_outline</mat-icon>
+                    Admin
                     <mat-icon>expand_more</mat-icon>
                 </mat-chip>
-            </button>
+            </mat-chip-list>
             <mat-menu #userChipMenu="matMenu">
                 <button mat-menu-item><mat-icon>vpn_key</mat-icon>Change Password</button>
                 <button mat-menu-item><mat-icon>settings</mat-icon>Preferences</button>
                 <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Log Out</button>
             </mat-menu>
+            
         </span>
     </mat-toolbar>
 </div>
