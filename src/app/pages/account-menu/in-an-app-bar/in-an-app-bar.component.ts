@@ -10,6 +10,8 @@ import { ConnectionPositionPair } from '@angular/cdk/overlay';
 export class InAnAppBarComponent implements OnInit {
     isSmall: boolean;
     avatarImage = './assets/avatar_40.png';
+    menuTitle = 'Chima Thabani';
+    menuSubtitle = 'CThabani@example.com';
     open1 = false;
     open2 = false;
     open3 = false;
@@ -44,11 +46,24 @@ export class InAnAppBarComponent implements OnInit {
         },
     ];
     positions = [
-        new ConnectionPositionPair({ originX: 'end', originY: 'bottom' }, { overlayX: 'end', overlayY: 'top' }, 0, 8),
+        new ConnectionPositionPair(
+            { originX: 'end', originY: 'bottom' },
+            { overlayX: 'end', overlayY: 'top' },
+            135,
+            12
+        ),
     ];
-    chipPositions = [
-        new ConnectionPositionPair({ originX: 'end', originY: 'bottom' }, { overlayX: 'end', overlayY: 'top' }, 0, 16),
+    hoverPositions = [
+        new ConnectionPositionPair(
+            { originX: 'end', originY: 'bottom' },
+            { overlayX: 'end', overlayY: 'top' },
+            195,
+            -52
+        ),
     ];
+    // chipPositions = [
+    //     new ConnectionPositionPair({ originX: 'end', originY: 'bottom' }, { overlayX: 'end', overlayY: 'top' }, 0, 16),
+    // ];
     constructor(
         private readonly _drawerService: StateService,
         private readonly _breakpointObserver: BreakpointObserver
