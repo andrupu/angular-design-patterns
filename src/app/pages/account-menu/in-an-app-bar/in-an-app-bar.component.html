@@ -143,7 +143,7 @@
             </pxb-user-menu>
         </mat-toolbar>
         <!-- Text Menu Example -->
-        <!-- <mat-toolbar class="mat-elevation-z2 app-bar-example" data-cy="pxb-toolbar-five">
+        <mat-toolbar class="mat-elevation-z2 app-bar-example" data-cy="pxb-toolbar-five">
             <button data-cy="toolbar-menu" mat-icon-button>
                 <mat-icon>menu</mat-icon>
             </button>
@@ -152,8 +152,17 @@
                 <div class="mat-body-1 sub-heading">Calling Out the User Name</div>
             </div>
             <pxb-spacer></pxb-spacer>
-            <pxb-user-menu [(open)]="open5" class="user-menu-with-custom-chip" [positions]="chipPositions">
-                <pxb-chip (openUserMenu)="toggleUserMenu($event)" [selected]="open5" label="Admin" pxb-avatar>
+            <pxb-user-menu 
+                [(open)]="open5" 
+                class="user-menu-with-custom-chip" 
+                [positions]="chipPositions"
+            >
+                <pxb-chip 
+                    (openUserMenu)="toggleUserMenu($event)" 
+                    [selected]="open5" 
+                    label="Admin" 
+                    pxb-avatar
+                >
                     <mat-icon icon matChipAvatar class="left-icon">account_circle</mat-icon>
                     <mat-icon *ngIf="!open5; else revertIcon" class="right-icon" right-icon>expand_more</mat-icon>
                     <ng-template #revertIcon>
@@ -169,6 +178,6 @@
                     </mat-nav-list>
                 </div>
             </pxb-user-menu>
-        </mat-toolbar> -->
+        </mat-toolbar>
     </div>
 </section>

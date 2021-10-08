@@ -70,9 +70,12 @@ export class InAnAppBarComponent implements OnInit {
             -52
         ),
     ];
-    // chipPositions = [
-    //     new ConnectionPositionPair({ originX: 'end', originY: 'bottom' }, { overlayX: 'end', overlayY: 'top' }, 0, 16),
-    // ];
+    chipPositions = [
+        new ConnectionPositionPair(
+            { originX: 'end', originY: 'bottom' }, 
+            { overlayX: 'end', overlayY: 'top' }, 
+            15, 16),
+    ];
     constructor(
         private readonly _drawerService: StateService,
         private readonly _breakpointObserver: BreakpointObserver
