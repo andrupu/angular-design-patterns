@@ -49,15 +49,24 @@ export class InAnAppBarComponent implements OnInit {
         new ConnectionPositionPair(
             { originX: 'end', originY: 'bottom' },
             { overlayX: 'end', overlayY: 'top' },
-            135,
-            12
+            15,
+            8
         ),
+        // 135, 12 for alignment on left border of icon
     ];
     hoverPositions = [
         new ConnectionPositionPair(
             { originX: 'end', originY: 'bottom' },
             { overlayX: 'end', overlayY: 'top' },
             195,
+            -52
+        ),
+    ];
+    slideLeftPositions = [
+        new ConnectionPositionPair(
+            { originX: 'end', originY: 'bottom' },
+            { overlayX: 'end', overlayY: 'top' },
+            15,
             -52
         ),
     ];
